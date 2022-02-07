@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trivial-css/cdn/trivial.css">
+    <style>
+        h1,
+        h2,
+        h5 {
+            color: orangered;
+        }
+
+        b {
+            color: red;
+        }
+
+        img {
+            height: 100px;
+            width: 150px;
+            margin-bottom: 10px;
+            border-style: solid;
+            border-color: brown;
+        }
+
+        a {
+            text-align: justify;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div name="top-part" style="background-color: khaki;">
+        <center>
+            <h1 style="color: blue;"><u>Amazon.com</u></h1>
+        </center>
+
+        <h2 style="padding-left: 10px;">Computers,Tablets and IT Accessories</h2>
+        <p style="padding-left: 10px;">Shop laptops, desktops, monitors, tablets, PC gaming, hard drives and storage,
+            accessories and more</p>
+        <hr>
+    </div>
+    <div name="content" class="side-by-side">
+
+        <div name="side-menu" class="space-right-10" style="background-color:khaki;">
+            <div style="padding-left: 10px;">Refine by</div><br>
+            <div><b style="padding-left: 5px;">Amazon Certified</b></div>
+            <div class="side-by-side">
+                <input type="checkbox" id="auto">
+                <label for="auto">Auto Replenishment</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="alexa">
+                <label for="alexa">Works with Alexa</label>
+            </div>
+            <br>
+            <div><b style="padding-left: 5px;">From our Brands</b></div>
+            <div class="side-by-side">
+                <input type="checkbox" id="ob">
+                <label for="ob">Our Brands</label>
+            </div>
+
+            <br>
+            <div><b style="padding-left: 5px;">Featured Brands</b></div>
+            <div class="side-by-side">
+                <input type="checkbox" id="rk">
+                <label for="rk">Roku</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="tp">
+                <label for="tp">TP-Link</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="hp">
+                <label for="hp">HP</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="wd">
+                <label for="wd">Western Digital</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="ab">
+                <label for="ab">Amazon Basics</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="vt">
+                <label for="vt">VicTsing</label>
+            </div>
+            <div class="side-by-side">
+                <input type="checkbox" id="logi">
+                <label for="logi">Logitech</label>
+            </div>
+            <div><br>
+                <b style="padding-left: 5px;">Price</b>
+                <div class="side-by-side">
+                    <input class="font-size-5 width-60" type="text" value="Min">
+                    <input class="font-size-5 width-60 space-left-5" type="text" value="Max">
+                    <button class=" space-left-5">Go</button>
+                </div>
+            </div>
+        </div>
+
+        <div name="products" style="background-color:khaki;">
+
+            <div name="top-bar" class="side-by-side" style="margin-top: 10px;">
+                <div class="space-right-90">1-24 of over 100,000 results for <b>Computers</b></div>
+                <div class="space-left-300">
+                    <label for="input"> Sort by</label>
+                    <select id="input" name="sort-by">
+                        <option value="high to low">High to Low</option>
+                        <option value="low to high">Low to High</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="discount">Discount</option>
+                    </select>
+                </div>
+                <img class="space-left-20" style="width:20px; height: auto;"
+                    src="https://static.thenounproject.com/png/198752-200.png">
+            </div>
+            <br>
+
+            <div name="section-1" class="side-by-side" style="margin-left: 20px;">
+                <div name="item-1">
+                    <h5>Bestseller</h5>
+                    <img src="https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg">
+                    <br>
+                    <a href="https://www.amazon.in">HP 15 (2021) AMD Ryzen 3-3250 8 GB RAM, 1TB HDD + 256GB SSD, 15.6
+                        inches FHD Screen, Windows 10, MS Office Thin & Light Laptop, 1.82kg (15s-gr0012AU), Silver</a>
+                    <div>by HP</div>
+                    <p><b style="color: black;">Ships to Canada</b></p>
+                    <p><b>$499</b></p>
+                    <div style="color: blue;">See more</div>
+                </div>
+
+                <div name="item-2" class="space-left-10">
+                    <h5>Bestseller</h5>
+                    <img src="https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg">
+                    <br>
+                    <a href="https://www.amazon.in">Lenovo Chromebook 14e 14.0" FHD Business Laptop (AMD 3015Ce
+                        Processor/4GB DDR4 RAM/64GB Storage eMMC/AMD Radeon Graphics/Chrome OS/Grey) 82M10019HA</a>
+                    <div>by Lenovo</div>
+                    <p><b style="color: black;">Ships to Canada</b></p>
+                    <p><b>$499</b></p>
+                    <div style="color: blue;">See more</div>
+                </div>
+
+                <div name="item-3" class="space-left-10">
+                    <h5>Bestseller</h5>
+                    <img src="https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg">
+                    <br>
+                    <a href="https://www.amazon.in">Mi Notebook Pro QHD+ IPS Anti Glare Display Intel Core i5-11300H
+                        11th Gen 14-inch(35.56 cms) Thin and Light Laptop (8GB/512GB SSD/Iris Xe Graphics/Win 10/Backlit
+                        KB/Fingerprint Sensor/1.4 Kg)</a>
+                    <div>by Mi</div>
+                    <p><b style="color: black;">Ships to Canada</b></p>
+                    <p><b>$499</b></p>
+                    <div style="color: blue;">See more</div>
+                </div>
+
+            </div>
+            <br><br><br>
+            <hr><br>
+            <div name="section-1" class="side-by-side" style="margin-left: 20px;">
+                <div name="item-1">
+                    <h5>Bestseller</h5>
+                    <img src="https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg">
+                    <br>
+                    <a href="https://www.amazon.in">HP 15 (2021) AMD Ryzen 3-3250 8 GB RAM, 1TB HDD + 256GB SSD, 15.6
+                        inches FHD Screen, Windows 10, MS Office Thin & Light Laptop, 1.82kg (15s-gr0012AU), Silver</a>
+                    <div>by HP</div>
+                    <p><b style="color: black;">Ships to Canada</b></p>
+                    <p><b>$499</b></p>
+                    <p><b>Amazon Certified:</b>Works with Alexa</p>
+                    <div style="color: blue;">See more</div>
+                </div>
+
+                <div name="item-2" class="space-left-10">
+                    <h5>Bestseller</h5>
+                    <img src="https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg">
+                    <br>
+                    <a href="https://www.amazon.in">Lenovo Chromebook 14e 14.0" FHD Business Laptop (AMD 3015Ce
+                        Processor/4GB DDR4 RAM/64GB Storage eMMC/AMD Radeon Graphics/Chrome OS/Grey) 82M10019HA</a>
+                    <div>by Lenovo</div>
+                    <p><b style="color: black;">Ships to Canada</b></p>
+                    <p><b>$499</b></p>
+
+                    <div style="color: blue;">See more</div>
+                </div>
+
+                <div name="item-3" class="space-left-10">
+                    <h5>Bestseller</h5>
+                    <img src="https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg">
+                    <br>
+                    <a href="https://www.amazon.in">Mi Notebook Pro QHD+ IPS Anti Glare Display Intel Core i5-11300H
+                        11th Gen 14-inch(35.56 cms) Thin and Light Laptop (8GB/512GB SSD/Iris Xe Graphics/Win 10/Backlit
+                        KB/Fingerprint Sensor/1.4 Kg)</a>
+                    <div>by Mi</div>
+                    <p><b style="color: black;">Ships to Canada</b></p>
+                    <p><b>$499</b></p>
+                    <p><b>Amazon Certified:</b>Works with Alexa</p>
+                    <div style="color: blue;">See more</div>
+                </div>
+
+            </div>
+
+            <br><br><br><br>
+            <hr>
+
+
+        </div>
+</body>
+<html>
