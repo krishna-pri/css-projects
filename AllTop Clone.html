@@ -22,6 +22,7 @@
             font-weight: normal;
             padding: 3px;
             text-align: -webkit-match-parent;
+
         }
 
         a {
@@ -55,20 +56,24 @@
 
         .i1 {
 
-            width: 200px;
+            position: relative;
+            line-height: 1.4;
+            display:block;
+            word-wrap:nowrap;
+            max-width: 100%;
             white-space: nowrap;
-            overflow: hidden;
             text-overflow: ellipsis;
-
-            /* padding: 20px; */
-            margin-right: 20px;
+            overflow: hidden;
+            -webkit-box-sizing: border-box;
+            box-sizing:content-box;
+            /* padding: 0; */
+           
+            margin-right: 5px;
             margin-left: 0px;
-            font-size: 1.3rem;
-            margin: 0;
             background: white;
-            /* resize: horizontal; */
-            /* display: grid; */
-            width: 33%;
+            width: 400px;
+            height: 100%;
+
         }
     </style>
 </head>
