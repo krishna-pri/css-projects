@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Movie Zone</title>
+    <script language="JavaScript" type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script language="JavaScript" crossorigin="anonymous" type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/mics-global/cdn@52e35e85ea3b6e92a02e19d82c24548e38e08144/htm100/movie-zone-main.js">
+        </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://i.gifer.com/V4uJ.gif');
+            /* background-size: cover; */
+            font-family: cursive;
+        }
+
+        h1 {
+            text-align: center;
+            color: crimson;
+        }
+
+        hr {
+            border-top: 1px solid crimson;
+            border-width: 2px;
+
+        }
+
+        b {
+            color: maroon;
+            font-size: 20px;
+        }
+
+        img {
+            border-style: solid;
+            /* margin-left: 300px; */
+            border-color: yellow;
+        }
+
+        p,
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+
+        u {
+            text-decoration-color: yellow;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container" style="text-align: center; width: 900px;">
+        <!-- Add All your code in here -->
+        <h1> <b style="color: crimson; text-align: center; font-size: 30px;">MOVIE ZONE</b></h1>
+        <p>
+        <h3><b style="color: black; text-align: justify; font-size: 25px;"><i>Welcome to Movie Zone! Just enter the
+                    title of the movie and hit the button below to explore the world
+                    of
+                    movies with us.</i></b> </h3>
+        </p>
+        <hr>
+        <form>
+            <label for="title">
+                <h3> <b> Movie Title: </b></h3>
+            </label>
+            <input type="text"
+                style=" margin-left: 280px; width: 300px; background-color:navajowhite; border-color: rgb(220, 67, 20);"
+                id="title">
+            <br><br>
+        </form>
+        <button id="fetch"
+            style="background-color:navajowhite; border-style: solid 5px; border-color: rgb(220, 67, 20);"><b>EXPLORE!</b></button>
+        <br><br>
+        <hr>
+        <p><img id="poster"></p>
+        <br><br>
+        <hr>
+        <label for="year"><b><u>YEAR </u></b></label><br>
+        <span id="year"></span>
+        <br><br>
+        <hr>
+        <label for="director"><b><u>DIRECTOR </u></b></label><br>
+        <span id="director"></span><br><br>
+        <hr>
+        <label for="actors"><b><u>ACTORS </u></b></label>
+        <p id="actors"></p><br><br>
+        <hr>
+        <label for="genre"><b><u>GENRE </u></b></label>
+        <p id="genre"></p><br><br>
+        <hr>
+        <label for="awards"><b><u>AWARDS</u></b></label>
+        <p id="awards"></p><br><br>
+        <hr>
+        <label for="rated"><b><u>RATED </u></b></label>
+        <p id="rated"></p><br><br>
+        <hr>
+        <label for="released"><b><u>RELEASED ON </u></b></label>
+        <p id="released"></p><br><br>
+        <hr>
+        <label for="runtime"><b><u>RUNTIME </u></b></label>
+        <p id="runtime"></p><br><br>
+        <hr>
+        <label for="website"><b><u>WEBSITE </u></b></label>
+        <p id="website"></p><br><br>
+        <hr>
+
+    </div>
+
+</body>
+
+</html>
