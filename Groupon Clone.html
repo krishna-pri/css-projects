@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Groupon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto+Slab&family=Source+Serif+4:ital@1&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Groupon</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto+Slab&family=Source+Serif+4:ital@1&family=Work+Sans&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous">
     </script>
     <style>
-        .top-bar
-        {
-            height: 200px;
-            background-color: #230f33;;
+        .box {
+            height: 100px;
+            width: 100px;
+            border: solid;
+            border-width: 2px;
+            border-color: gray;
+            margin-top: 15px;
+            margin-left: 30px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+
         }
-        body{
+
+        .box i {
+            font-size: 30px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+        }
+
+        .box p {
+            padding-left: 5px;
+            padding-top: 0px;
+        }
+
+        .top-bar {
+            height: 200px;
+            background-color: #230f33;
+            ;
+        }
+
+        body {
             margin: 0px;
             font-family: 'Roboto Slab', serif;
         }
-        .top-menus
-        {
+
+        .top-menus {
             display: flex;
             margin-left: 650px;
             color: white;
@@ -28,12 +56,12 @@
             font-style: normal;
             height: 25px;
         }
-        span{
+
+        span {
             margin-right: 15px;
         }
-        
-        .search-bar
-        {
+
+        .search-bar {
             height: 30px;
             padding-left: 50px;
             font-family: 'Roboto Slab', serif;
@@ -41,15 +69,58 @@
             font-weight: bold;
             color: white;
         }
+
+        .deal {
+            margin-left: 40px;
+            margin-right: 20px;
+            height: 300px;
+        }
+
+        .deal img {
+
+            height: 150px;
+            width: 200px;
+        }
+
+        .deal span {
+            font-size: 15px;
+        }
+
+        .deal p {
+            color: green;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .pics {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #div-l {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVw7icYv1PhUEMuqevM5Ut5yIjkCjOdZuh4YHz3uE0DdeQOzCgTRKVTxz9TlHzeVUp9VM&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: 520px 400px;
+            padding-left: 10px;
+        }
+
+        .elt {
+            margin-bottom: 20px;
+            margin-left: 15px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
     </style>
-   
+
 </head>
 
 <body>
     <div class="top-bar">
         <div class="top-menus">
-            <span class="fa fa-android" style="font-size:14px">  Get the Groupon App</span>
-            <span class="fas fa-heart" style="font-size:14px">  Wishlist</span>
+            <span class="fa fa-android" style="font-size:14px"> Get the Groupon App</span>
+            <span class="fas fa-heart" style="font-size:14px"> Wishlist</span>
             <span>Sell</span>
             <span>Help</span>
             <span>Sign up</span>
@@ -59,28 +130,208 @@
             <select style="background-color:transparent; color: white; width: 100px;height: 25px;border-style:solid;">
                 <option value="categories">Catogories</option>
             </select>
-            
+
             <span class="fa fa-cart-arrow-down" style="margin-left: 600px;"></span>
             <span class="fas fa-bell" style="font-size:20px"></span>
-            <select style="background-color:transparent; color: white; width: 70px;height: 25px;border-style:solid; margin-right: 15px;">
+            <select
+                style="background-color:transparent; color: white; width: 70px;height: 25px;border-style:solid; margin-right: 15px;">
                 <option value="Sign In">Sign In</option>
             </select>
-            
+
         </div>
 
         <div class="middle" style="height: 100px;">
             <center>
-            <select style="font-weight: bolder; font-family: 'Roboto Slab', serif; background-color:transparent; color: white; width: 180px;border-style:none;font-size: 40px;">
-                <option value="Chicago">Chicago</option>
-            </select><br>
-            <input type="text" value="Search Groupon" style=" margin-top:10px; width: 600px; height: 30px; text-align: center;">
+                <select
+                    style="font-weight: bolder; font-family: 'Roboto Slab', serif; background-color:transparent; color: white; width: 180px;border-style:none;font-size: 40px;">
+                    <option value="Chicago">Chicago</option>
+                </select><br>
+                <input type="text" value="Search Groupon"
+                    style=" margin-top:10px; width: 600px; height: 30px; text-align: center;">
             </center>
         </div>
     </div>
-    <div class="mid-bar" style="background-color: #E8F8FF; height:60px;padding-left: 230px;padding-right: 200px;font-size: 13px;color: gray;display: flex;">
-    <div style="width: 300px; padding-bottom: 10px;margin-right:30px;border-right: solid; margin: 10px;"><a style=" text-decoration: none;color: gray; " href="">Find the perfect Valentine's Day gifts & experiences for everyone you love</a></div>
-            <div style="width: 300px; padding-bottom: 10px;margin-right:30px; margin: 10px;"><a style=" text-decoration: none;color: gray;" href="">Switch to the app! Search, purchase, and redeem Groupons directly from your mobile device.</a></div>
-       
+    <div class="mid-bar"
+        style="background-color: #E8F8FF; height:60px;padding-left: 230px;padding-right: 200px;font-size: 13px;color: gray;display: flex;">
+        <div style="width: 300px; padding-bottom: 10px;margin-right:30px;border-right: solid; margin: 10px;"><a
+                style=" text-decoration: none;color: gray; " href="">Find the perfect Valentine's Day gifts &
+                experiences for everyone you love</a></div>
+        <div style="width: 300px; padding-bottom: 10px;margin-right:30px; margin: 10px;"><a
+                style=" text-decoration: none;color: gray;" href="">Switch to the app! Search, purchase, and redeem
+                Groupons directly from your mobile device.</a></div>
+
+    </div>
+    <div class="boxes" style="display: flex;">
+        <div class="box">
+            <i class="fas fa-arrow-right"></i>
+            <p>Things To Do</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-fan"></i>
+            <p>Beauty & Spas</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <p>Food & Drink</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-dumbbell"></i>
+            <p>Health & Fitness</p>
+
+        </div>
+        <div class="box">
+            <i class="fas fa-tree"></i>
+            <p>Travel</p>
+
+        </div>
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <p>Automotive</p>
+
+        </div>
+        <div class="box">
+            <i class="fas fa-box"></i>
+            <p>Goods</p>
+
+        </div>
+    </div>
+    <h2 style="padding-left: 20px;">Trending Deals for You</h2>
+    <div class="deals" style="display: flex;">
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlGBfboPIpW-R-x_D3jYM3j9nlxDqXrQTaw&usqp=CAU">
+            <h3>King Spa and sauna</h3>
+            <span>4.7 Rating</span>
+            <p>$ 25 (63% OFF)</p>
+
+
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlGBfboPIpW-R-x_D3jYM3j9nlxDqXrQTaw&usqp=CAU">
+            <h3>Simple Canvas Prints</h3>
+            <span>4.1 Rating</span>
+            <p>$ 35 (48% OFF)</p>
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlGBfboPIpW-R-x_D3jYM3j9nlxDqXrQTaw&usqp=CAU">
+            <h3>My Kidzplaz</h3>
+            <span>4.6 Rating</span>
+            <p>$ 28 (50% OFF)</p>
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlGBfboPIpW-R-x_D3jYM3j9nlxDqXrQTaw&usqp=CAU">
+            <h3>Valvoline Oil Change</h3>
+            <span>4.7 Rating</span>
+            <p>$ 31.99 (30% OFF)</p>
+        </div>
+
+    </div>
+    <div class="pics" style="display: flex;">
+        <div id="div-l" style="height: 400px; width:50%;">
+            <h2>Let 'Em Wonder: Upto 50% Offer on Selected Dresses</h2>
+            <a href="">Shop now</a>
+        </div>
+        <div id="div-r" style="height: 400px; width:50%;">
+            <div class="elt" style="height:45%; background-color: green;">
+                <h2>Get the Self-Care you need statring at $20</h2>
+                <a href="">Shop now</a>
+            </div>
+            <div class="elt" style="height:45%; background-color:rgb(255, 0, 119)">
+                <h2>Have a Restaurant Deal You Loved - You can Get It Again!!</h2>
+                <a href="">Discover more</a>
+
+            </div>
+        </div>
+    </div>
+
+    <h2 style="padding-left: 20px;">New Deals for You</h2>
+    <div class="deals" style="display: flex;">
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKjAQq1VqwrT0WHYpmb_c-QgYz3VoNjENEQ&usqp=CAU">
+            <h3>King Spa and sauna</h3>
+            <span>4.7 Rating</span>
+            <p>$ 25 (63% OFF)</p>
+
+
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKjAQq1VqwrT0WHYpmb_c-QgYz3VoNjENEQ&usqp=CAU">
+            <h3>Simple Canvas Prints</h3>
+            <span>4.1 Rating</span>
+            <p>$ 35 (48% OFF)</p>
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKjAQq1VqwrT0WHYpmb_c-QgYz3VoNjENEQ&usqp=CAU">
+            <h3>My Kidzplaz</h3>
+            <span>4.6 Rating</span>
+            <p>$ 28 (50% OFF)</p>
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKjAQq1VqwrT0WHYpmb_c-QgYz3VoNjENEQ&usqp=CAU">
+            <h3>Valvoline Oil Change</h3>
+            <span>4.7 Rating</span>
+            <p>$ 31.99 (30% OFF)</p>
+        </div>
+
+    </div>
+
+    <div class="pics" style="display: flex;">
+        <div id="div-l" style="height: 400px; width:50%;">
+            <h2>Let 'Em Wonder: Upto 50% Offer on Selected Dresses</h2>
+            <a href="">Shop now</a>
+        </div>
+        <div id="div-r" style="height: 400px; width:50%;">
+            <div class="elt" style="height:45%; background-color: green;">
+                <h2>Get the Self-Care you need statring at $20</h2>
+                <a href="">Shop now</a>
+            </div>
+            <div class="elt" style="height:45%; background-color:rgb(255, 0, 119)">
+                <h2>Have a Restaurant Deal You Loved - You can Get It Again!!</h2>
+                <a href="">Discover more</a>
+
+            </div>
+        </div>
+    </div>
+    <h2 style="padding-left: 20px;">Featured</h2>
+    <div class="deals" style="display: flex;">
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJbWVsaymBcU-Pii_7FO4Nw8wNTaQc78vWQ&usqp=CAU">
+            <h3>King Spa and sauna</h3>
+            <span>4.7 Rating</span>
+            <p>$ 25 (63% OFF)</p>
+
+
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJbWVsaymBcU-Pii_7FO4Nw8wNTaQc78vWQ&usqp=CAU">
+            <h3>Simple Canvas Prints</h3>
+            <span>4.1 Rating</span>
+            <p>$ 35 (48% OFF)</p>
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJbWVsaymBcU-Pii_7FO4Nw8wNTaQc78vWQ&usqp=CAU">
+            <h3>My Kidzplaz</h3>
+            <span>4.6 Rating</span>
+            <p>$ 28 (50% OFF)</p>
+        </div>
+        <div class="deal">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJbWVsaymBcU-Pii_7FO4Nw8wNTaQc78vWQ&usqp=CAU">
+            <h3>Valvoline Oil Change</h3>
+            <span>4.7 Rating</span>
+            <p>$ 31.99 (30% OFF)</p>
+        </div>
+
     </div>
 </body>
 
