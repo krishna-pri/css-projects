@@ -53,11 +53,17 @@
 </head>
 
 <body>
+    <script>
+        function clickSubmit()
+        {
+            alert("Form Submitted Successfully")
+        }
+    </script>
     <div class="header">
         <h1>KRISHNA'S BLOGS : Contact Us </h1>
     </div>
     <div class="container">
-        <form>
+        <form onsubmit="clickSubmit()">
             <label for="fname">First Name</label>
             <br>
             <input style="width: 300px;" type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -68,7 +74,7 @@
             <input style="width: 300px;" type="text" id="lname" name="lastname" placeholder="Your last name..">
             <br><br>
 
-            <label for="email">Last Name</label>
+            <label for="email">Email ID</label>
             <br>
             <input style="width: 300px;" type="text" id="email" name="email" placeholder="Your email id">
             <br><br>
