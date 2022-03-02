@@ -2,12 +2,14 @@
 <html>
 
 <head>
-    <title>Groupon:About Us</title>
+    <title>Groupon:Contact Us</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto+Slab&family=Source+Serif+4:ital@1&family=Work+Sans&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous">
+    
     </script>
+   
     <style>
         body {
             margin: 0px;
@@ -47,12 +49,18 @@
 </head>
 
 <body>
+    <script>
+        function clickSubmit()
+        {
+            alert("Form Submitted Successfully")
+        }
+    </script>
     <div class="top-bar">
         <span style="color: white; font-weight: bold; margin-right: 20px;font-size: 25px;">GROUPON : Contact Us</span>
     </div>
 
     <div class="container">
-        <form>
+        <form onsubmit="clickSubmit()">
             <label for="fname">First Name</label>
             <br>
             <input style="width: 300px;" type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -63,7 +71,7 @@
             <input style="width: 300px;" type="text" id="lname" name="lastname" placeholder="Your last name..">
             <br><br>
 
-            <label for="email">Last Name</label>
+            <label for="email">Email Id</label>
             <br>
             <input style="width: 300px;" type="text" id="email" name="email" placeholder="Your email id">
             <br><br>
@@ -74,7 +82,7 @@
                 style="height:100px; width:300px"></textarea>
             <br><br>
 
-            <input style="margin-left:110px; background-color: #230f33; color:white" type="submit" value="Submit">
+            <input style="margin-left:110px; background-color: #230f33; color:white" type="submit" value="Submit" >
         </form>
     </div>
 
