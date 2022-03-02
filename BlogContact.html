@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Crete Round', serif;
+            margin: 0px;
+        }
+
+        .header {
+            width: 100%;
+            /* position: fixed; */
+            top: 0px;
+            background-color: rgb(115, 250, 198);
+            height: 120px;
+            color: rgb(26, 3, 3);
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+        }
+
+        .footer {
+            width: 100%;
+            /* position: fixed; */
+            bottom: 0px;
+            background-color: rgb(115, 250, 198);
+            height: 50px;
+            color: rgb(24, 10, 43);
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 30px;
+            padding-top: 20px;
+
+        }
+
+        .footer a {
+            padding-left: 10px;
+            color: rgb(24, 10, 43);
+        }
+
+        .container {
+
+            
+            padding: 20px;
+            padding-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>KRISHNA'S BLOGS : Contact Us </h1>
+    </div>
+    <div class="container">
+        <form>
+            <label for="fname">First Name</label>
+            <br>
+            <input style="width: 300px;" type="text" id="fname" name="firstname" placeholder="Your name..">
+            <br><br>
+
+            <label for="lname">Last Name</label>
+            <br>
+            <input style="width: 300px;" type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <br><br>
+
+            <label for="email">Last Name</label>
+            <br>
+            <input style="width: 300px;" type="text" id="email" name="email" placeholder="Your email id">
+            <br><br>
+
+            <label for="subject">Subject</label>
+            <br>
+            <textarea id="subject" name="subject" placeholder="Write to us..."
+                style="height:100px; width:300px"></textarea>
+            <br><br>
+
+            <input style="margin-left:110px; background-color: #230f33; color:white" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        <div style="display: inline;">
+            <span>© 2022 Krishna's Blogs, Inc. All Rights Reserved.</span>
+            <a style="padding-left: 20px;" href="">Terms of Use</a>
+            <a href="">Privacy Statements</a>
+            <a href="">Licenses</a>
+            <!-- <a href="">Accessibility</a> -->
+            <a href="">Do not sell my Personal Information</a>
+            <span style="padding-left: 30px;">Follow Me On</span>
+            <i style="padding-left: 10px; font-size: 20px;" class="fa fa-facebook"></i>
+            <i style="font-size: 20px;margin-left: 10px;" class="fa fa-twitter-square"></i>
+        </div>
+    </div>
+</body>
+
+</html>
