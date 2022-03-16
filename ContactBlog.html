@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blogging Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@500&family=Luxurious+Roman&family=Neonderthaw&family=Sora&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 0%;
+            background-image: url("https://cdn.pixabay.com/photo/2015/07/25/06/26/crystal-859317_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+
+        .header {
+            top: 0%;
+            height: 50px;
+            background-image: url("https://cdn.pixabay.com/photo/2016/11/23/08/10/texture-1852198_1280.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            padding-left: 14%;
+        }
+
+        .header h1 {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: x-large;
+            margin: 1%;
+            margin-left: 17%;
+            color: black;
+            padding-left: 20%;
+        }
+
+        .main {
+            margin: 1% 15% 0% 15%;
+            background-color:transparent;
+            padding: 1%;
+            font-size: large;
+            line-height: 30px;
+        }
+
+
+        .header>a {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            /* margin: 1% 0% 1% 5%; */
+            margin-top: 1%;
+            margin-left: 23%;
+            color: black;
+            font-size: 24px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+
+        .main>p {
+            text-align: justify;
+        }
+
+        .footer {
+            bottom: 0%;
+            color: crimson;
+        }
+
+        .footer>h1 {
+            background-color: rgba(255, 255, 0, 0.548);
+        }
+        input, textarea
+        {
+            height: 20px;
+            width: 300px;
+        }
+        textarea
+        {
+            height: 100px;
+        }
+        label,#sub
+        {
+            font-size: large;
+            font-weight: bold;
+
+        }
+        #sub
+        {
+            font-family: 'Inconsolata', monospace;
+            width: 100px;
+            height: 30px;
+            margin-bottom: 2%;
+        }
+        form{
+            border:1px solid black;
+            margin: 5% 15% 3% 15%;
+            padding: 2%;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 align="center">CONTACT</h1>
+        <a style="float: right;padding-left: 20%;" href="FinalProject.html">Home</a>
+    </div>
+    <div class="main">
+        <form align="center" onsubmit="clickSubmit()">
+            <label for="fname">First Name</label>
+            <br>
+            <input  type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+            <br><br>
+
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+            <br><br>
+
+            <label for="email">Email Id</label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Enter your email id">
+            <br><br>
+
+            <label for="subject">Subject</label>
+            <br>
+            <textarea id="subject" name="subject" placeholder="Write to me..."></textarea>
+            <br><br>
+
+            <input id="sub" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <h1 align="center">Be a Light Unto Yourself</h1>
+    </div>
+    <script>
+        function clickSubmit()
+        {
+            var obj={};
+            var fname=document.getElementById("fname").value;
+            var lname=document.getElementById("lname").value;
+            var email=document.getElementById("email").value;
+            var subject=document.getElementById("subject").value;    
+            obj.f=fname;
+            obj.l=lname;
+            obj.mail=email;
+            obj.sub=subject;
+            localStorage.setItem("data", JSON.stringify(obj));   
+            var o=localStorage.getItem("data");
+            console.log(o);
+            alert("Form Submitted");    
+        }
+    </script>
+</body>
+
+</html>

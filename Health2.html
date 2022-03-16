@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blogging Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@500&family=Luxurious+Roman&family=Neonderthaw&family=Sora&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous">
+    </script>
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 0%;
+            background-image: url("https://cdn.pixabay.com/photo/2015/07/25/06/26/crystal-859317_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+
+        .header {
+            top: 0%;
+            height: 50px;
+            background-image: url("https://cdn.pixabay.com/photo/2016/11/23/08/10/texture-1852198_1280.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            padding-left: 3%;
+        }
+
+        .header h1 {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: x-large;
+            margin: 1%;
+            margin-left: 21%;
+            color: black;
+            padding-left: 20%;
+        }
+
+        .main {
+            margin: 2% 15% 2% 15%;
+            background-color: white;
+            padding: 2%;
+            font-size: large;
+            line-height: 30px;
+        }
+
+
+        ol {
+            padding: 2% 10% 2% 5%;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: rgb(226, 223, 223);
+            border: 1px solid rgba(255, 145, 0, 0.63);
+            padding: 5px;
+            position: absolute;
+            top: 11%;
+            left: 2%;
+            /* width: 200px; */
+
+        }
+
+        #links {
+            display: none;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        #icon:hover {
+            color: blue;
+        }
+
+        .header>a {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            /* margin: 1% 0% 1% 5%; */
+            margin-top: 1%;
+            margin-left: 16%;
+            color: black;
+            font-size: 24px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+
+        .poses {
+            display: grid;
+            background-color: white;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 200px;
+            grid-column-gap: 50px;
+            margin: 2%;
+        }
+        .poses>div, .poses img
+        {
+            padding: 1%;
+            width: 300px;
+            height: 200px;
+            
+        }
+        #id3
+        {
+            padding: 2%;
+            line-height: 30px;
+            text-align: justify;
+        }
+        .footer
+        {
+            bottom: 0%;
+            color: crimson;
+        }
+        .footer>h1
+        {
+            background-color: rgba(255, 255, 0, 0.548);
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- <i id="icon"style="font-size: 22px; float: left;padding: 1%;" class="fas fa-bars"></i> -->
+        <h1 align="center">YOGA ASANAS</h1>
+        <a style="float: right;padding-left: 20%;" href="FinalProject.html">Home</a>
+    </div>
+
+
+    <div class="main">
+        <h1 align="center">Yoga for Flexibility</h1>
+        <div class="poses">
+            <div id="id1" name="imag">
+                <img src="https://cdn.cdnparenting.com/articles/2019/04/29114806/1033264990-H-1024x700.webp">
+            </div>
+            <div id="id2" name="pose">
+                <h2 style="color: brown; margin-top: 20%;">2. BHUJANGASANA<br>(The Cobra Pose)</h2>
+            </div>
+        </div>
+        <div id="id3" name="steps">
+            <h2>Steps to achieve Bhujangasana</h2>
+            <ol>
+                <li>Lie down on your stomach.</li>
+                <li>Raise your trunk and head supported by the palms.</li>
+                <li>Bend your arms at the elbows.</li>
+                <li>Arch your neck and look upward gently.</li>
+                <li>Make sure that your stomach is pressed on the floor.</li>
+                <li>Put pressure on your toes by pressing them onto the floor. (Extend them out to fully experience the cobra)</li>
+                <li>Hold the asana for 5 seconds.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="footer">
+        <h1 align="center">Improve Your Flexibility!!</h1>
+    </div>
+</body>
+
+</html>

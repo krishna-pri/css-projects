@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blogging Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@500&family=Luxurious+Roman&family=Neonderthaw&family=Sora&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 0%;
+            background-image: url("https://cdn.pixabay.com/photo/2015/07/25/06/26/crystal-859317_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+
+        .header {
+            top: 0%;
+            height: 50px;
+            background-image: url("https://cdn.pixabay.com/photo/2016/11/23/08/10/texture-1852198_1280.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            padding-left: 3%;
+        }
+        .header h1{
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: x-large;
+            margin: 1%;
+            margin-left: 20%;
+            color: black;
+            padding-left: 20%;
+        }
+
+        .main {
+            margin: 2% 15% 2% 15%;
+            background-color: white;
+            padding: 2%;
+            font-size: large;
+            line-height: 30px;
+        }    
+        .recipe
+        {
+            display: flex;
+            flex-direction: row;
+            margin: 3% 10%;
+            background-color: rgba(255, 255, 0, 0.315);
+        }
+       
+        .recipe> img
+        {
+            margin: 5%;
+            width: 40%;
+            height: 50%;
+        }
+        #rn
+        {
+            flex-grow: 10;
+            margin-top: 30%;
+            margin-bottom: 30%;
+            font-size: 50px;
+        }
+        table
+        {
+            text-align: left;
+            background-color: lightblue;
+            padding: 5%;
+        }
+        th
+        {
+            padding-right: 20px;
+        }
+        .instructions
+        {
+            margin-top: 5%;
+            line-height: 40px;
+            text-align: justify;
+            
+        }
+        ol
+        {
+            padding: 0% 10% 2% 5%;
+        }
+        .header>a {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            /* margin: 1% 0% 1% 5%; */
+            margin-top: 1%;
+            margin-left: 12.5%;
+            color: black;
+            font-size: 24px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+        #icon:hover {
+            color: blue;
+        }
+        li::first-letter
+        {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <!-- <i id="icon" style="font-size: 22px; float: left;padding: 1%;"
+                class="fas fa-bars"></i> -->
+    <h1 align="center">TRY MY RECIPES!</h1>
+    <a style="float: right;padding-left: 20%;" href="FinalProject.html">Home</a>
+</div>
+<div class="main">
+    <div class="recipe">
+        <img align="center" src="https://hebbarskitchen.com/wp-content/uploads/2021/08/rava-laddu-recipe-rava-ladoo-recipe-sooji-laddu-or-sooji-ladoo-2-683x1024.jpeg">
+        <h1 id="rn">Rava Laddu</h1>
+    </div>
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <table>
+            <tr>
+                <th>Ghee</th>
+                <td>1/4 Cup</td>
+            </tr>
+            <tr>
+                <th>Rava</th>
+                <td>1 1/2 Cups</td>
+            </tr>
+            <tr>
+                <th>Coconut</th>
+                <td>1/2 Cup</td>
+            </tr>
+            <tr>
+                <th>Sugar</th>
+                <td>1 1/2 Cups</td>
+            </tr>
+            <tr>
+                <th>Water</th>
+                <td>1 1/2 Cups</td>
+            </tr>
+            <tr>
+                <th>Cardamom Powder</th>
+                <td>1/4 tsp</td>
+            </tr>
+        </table>
+    </div>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>firstly, in a pan heat ¼ cup ghee and add 1½ cup rava.</li>
+            <li>roast on low flame until the rava turns aromatic.</li>
+            <li>keep roasting on low flame. make sure not to roast on high flame as it changes the color of rava.</li>
+            <li>now add ½ cup coconut and roast for 2 minutes. keep aside.</li>
+            <li>In a large kadai take 1½ cup sugar and ½ cup water.</li>
+            <li>stir and boil the sugar until 1 string sugar syrup consistency is reached.</li>
+            <li>turn off the flame and add roasted rava. make sure to turn off the flame, else the ladoo will turn hard.</li>
+            <li>keep stirring until the rava is well combined with sugar syrup. keep aside for 2 minutes.</li>
+            <li>meanwhile, in a pan heat 1 tsp ghee. roast 2 tbsp cashew and 2 tbsp raisins until it turns golden brown.</li>
+            <li>add fried cashew, raisins, and ¼ tsp cardamom powder.</li>
+            <li>mix well until the mixture turns moist absorbing the sugar syrup.</li>
+            <li>initially, the mixture will be moist and later it starts to absorb and turns to crumble texture but moist.</li>
+            <li>start preparing the ladoo immediately, the ladoo will harden once cooled. once cooled, if the mixture turns dry, you can warm it in the microwave.</li>
+            <li>finally, enjoy rava laddu for a week when stored in an airtight container.</li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>

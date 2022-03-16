@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blogging Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@500&family=Luxurious+Roman&family=Neonderthaw&family=Sora&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49a6b63fe1.js" crossorigin="anonymous">
+    </script>
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 0%;
+            background-image: url("https://cdn.pixabay.com/photo/2015/07/25/06/26/crystal-859317_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+            /* overflow-x: hidden; */
+        }
+
+        .header {
+            top: 0%;
+            height: 50px;
+            background-image: url("https://cdn.pixabay.com/photo/2016/11/23/08/10/texture-1852198_1280.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            padding-left: 3%;
+        }
+
+        .header h1 {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: x-large;
+            margin: 1%;
+            margin-left: 17%;
+            color: black;
+            padding-left: 20%;
+        }
+
+        .main {
+            margin: 2% 15% 2% 15%;
+            background-color: white;
+            padding: 2%;
+            font-size: large;
+            line-height: 30px;
+        }
+
+        .recipe {
+            display: flex;
+            flex-direction: row;
+            margin: 3% 10%;
+            /* border: 1px solid black; */
+            background-color: rgba(255, 255, 0, 0.315);
+        }
+
+        .recipe>img {
+            margin: 5%;
+            width: 40%;
+            height: 50%;
+        }
+
+        #rn {
+            flex-grow: 10;
+            margin-top: 30%;
+            margin-bottom: 30%;
+            font-size: 50px;
+        }
+
+        table {
+            text-align: left;
+            background-color: lightblue;
+            padding: 5%;
+        }
+
+        th {
+            padding-right: 20px;
+        }
+
+        .instructions {
+            margin-top: 5%;
+            line-height: 40px;
+            text-align: justify;
+
+        }
+
+        ol {
+            padding: 0% 10% 2% 5%;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: rgb(226, 223, 223);
+            border: 1px solid rgba(255, 145, 0, 0.63);
+            padding: 5px;
+            position: absolute;
+            top: 11%;
+            left: 2%;
+            /* width: 200px; */
+           
+        }
+        #links
+        {
+            display: none;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        #icon:hover {
+            color: blue;
+        }
+        .header>a {
+            font-family: 'Inconsolata', monospace;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            /* margin: 1% 0% 1% 5%; */
+            margin-top: 1%;
+            margin-left: 12%;
+            color: black;
+            font-size: 24px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+        li::first-letter
+        {
+            text-transform: capitalize;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <i id="icon" onclick="viewMenu()" style="font-size: 22px; float: left;padding: 1%;"
+                class="fas fa-bars"></i>
+        <nav style="float: left; padding-top: 5%;" id="links">
+            <a href="Recipe2.html">Rava Ladoo</a>
+        </nav>
+        <h1 align="center">TRY MY RECIPES!</h1>
+        <a style="float: right;padding-left: 20%;" href="FinalProject.html">Home</a>
+    </div>
+
+
+    <div class="main">
+        <div class="recipe">
+            <img
+                src="https://hebbarskitchen.com/wp-content/uploads/mainPhotos/ven-pongal-recipe-khara-pongal-recipe-how-to-make-ven-pongal-2-683x1024.jpeg">
+            <h1 id="rn">Ven Pongal</h1>
+        </div>
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <table>
+                <tr>
+                    <th>Ghee</th>
+                    <td>1 tsp</td>
+                </tr>
+                <tr>
+                    <th>Rice(rinsed)</th>
+                    <td>1/2 Cup</td>
+                </tr>
+                <tr>
+                    <th>Moong Dal</th>
+                    <td>1/2 Cup</td>
+                </tr>
+                <tr>
+                    <th>Water</th>
+                    <td>4 Cups</td>
+                </tr>
+                <tr>
+                    <th>Salt</th>
+                    <td>Adjust to you taste</td>
+                </tr>
+            </table>
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>firstly, in a pressure cooker heat 1 tsp ghee.</li>
+                <li>add ½ cup rice, ½ cup moong dal and saute for a minute or until it turns aromatic.</li>
+                <li>further, add 4 cup water and ½ tsp salt. mix well.</li>
+                <li>cover and pressure cook for 5 whistles on medium flame</li>
+                <li>once the pressure settles down, open the cooker and give a good mix.</li>
+                <li>furthermore, in a pan heat 2 tbsp ghee.</li>
+                <li>also add 1 tsp cumin, ½ tsp pepper, 1 inch ginger, 2 chilli, 10 cashew and pinch hing</li>
+                <li>saute on low flame until cashew turns golden brown.</li>
+                <li>pour the tempering over cooked rice and dal mixture.</li>
+                <li>give a good mix, add more ghee if required.</li>
+                <li>finally, serve ven pongal/khara pongal with coconut chutney and sambar.</li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        function viewMenu() {
+           
+            var x = document.getElementById("links");
+           
+            if(x.style.display=="block")
+            {
+                x.style.display="none";
+            }
+            else{
+                x.style.display="block";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
